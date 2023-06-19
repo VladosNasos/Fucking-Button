@@ -1,0 +1,15 @@
+﻿<Window x:Class="Fucking_Button.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Gradient Button Example" Height="200" Width="300">
+    <Grid>
+        <Button x:Name="gradientButton" Content="Click Me!" Click="gradientButton_Click">
+            <Button.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="Blue" Offset="0" />
+                    <GradientStop Color="Red" Offset="1" />
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+    </Grid>
+</Window>
